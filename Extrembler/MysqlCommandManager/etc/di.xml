@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+* @package Extrembler 
+* @category Extrembler_MysqlCommandManager
+* @author Extrembler
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+   <type name="Magento\Framework\Console\CommandList">
+       <arguments>
+           <argument name="commands" xsi:type="array">
+               <item name="sqlrunQueryDeveloperOnly" xsi:type="object">Extrembler\MysqlCommandManager\Console\MysqlRunDeveloper</item>
+           </argument>
+       </arguments>
+   </type>
+</config>
