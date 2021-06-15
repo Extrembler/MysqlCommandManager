@@ -109,8 +109,8 @@ class MysqlRunDeveloper extends Command
    			}
    			else{
    				$result = $result->fetchAll();
-   				$table->setHeaders(array_keys($result[0]));
 	   			if(!empty($result)){
+					$table->setHeaders(array_keys($result[0]));
 		        	$table->setRows($result);
 	   			}
 	   			else{
